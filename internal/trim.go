@@ -1,7 +1,7 @@
 package internal
 
 import (
-	"rename/pkg"
+	"github.com/FelixWallner04/rename/pkg"
 )
 
 func TrimExecute(regex, folder string, tidy bool) {

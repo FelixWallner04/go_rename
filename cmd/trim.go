@@ -4,7 +4,7 @@ Copyright © 2024 NAME HERE <EMAIL ADDRESS>
 package cmd
 
 import (
-	"rename/internal"
+	"github.com/FelixWallner04/rename/internal"
 
 	"github.com/spf13/cobra"
 )
