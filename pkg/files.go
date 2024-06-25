@@ -1,7 +1,6 @@
 package pkg
 
 import (
-	"fmt"
 	"log"
 	"os"
 	"regexp"
@@ -38,7 +37,6 @@ func RenameFiles(folder, regex, substitution string) []string {
 		if err := os.Rename(folder+"/"+oldFileName, folder+"/"+newFileName); err != nil {
 			log.Fatal()
 		}
-		fmt.Println(oldFileName + "->" + newFileName)
 		renamedFiles = append(renamedFiles, newFileName)
 	}
 

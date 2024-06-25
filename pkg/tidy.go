@@ -1,7 +1,11 @@
 package pkg
 
-func TidySpecialCharacters(folder string) {
-	RenameFiles(folder, `^[^a-zA-Z0-9.]+`, "")
-	RenameFiles(folder, `^[.]`, "Empty.")
-	RenameFiles(folder, `_\.`, ".")
+func TidySpecialCharacters(folder string) []string {
+	var files []string
+
+	files = RenameFiles(folder, `^[^a-zA-Z0-9.]+`, "")
+	files = RenameFiles(folder, `^[.]`, "Empty.")
+	files = RenameFiles(folder, `_\.`, ".")
+
+	return files
 }
